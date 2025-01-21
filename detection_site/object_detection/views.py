@@ -1,20 +1,12 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from .forms import  UserRegisterForm
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.decorators import login_required
-from .forms import ImageUploadForm
-from .models import ImageUpload
-from PIL import Image as PILImage
-import numpy as np
 import cv2
 import numpy as np
 import matplotlib
 matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
 from django.core.files.storage import FileSystemStorage
 import os
-from django.core.files.storage import default_storage
 from django.conf import settings
 
 
